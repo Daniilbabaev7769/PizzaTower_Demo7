@@ -24,6 +24,8 @@ function scr_player_mach3() {
 			y = obj_player1.y
 		}
 	}
+	if (sprite_index == spr_crazyrun)
+	{
                 if (flamecloud_buffer > 0)
                     flamecloud_buffer--
                 else
@@ -35,6 +37,7 @@ function scr_player_mach3() {
                         sprite_index = spr_flamecloud
                     }
 				}
+	}
 	if (movespeed < 24 && move == xscale)
 	{
 		movespeed += 0.1

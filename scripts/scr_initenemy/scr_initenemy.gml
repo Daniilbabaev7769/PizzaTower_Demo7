@@ -41,4 +41,6 @@ function scr_initenemy()
 	invincible = 0
 	instantkillable = 1
 	parryable = 1
+	xscale = 1
+	yscale = 1
 }

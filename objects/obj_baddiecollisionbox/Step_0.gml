@@ -111,6 +111,8 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
 				other.baddieID.state = states.enemy_stun
 				if (other.baddieID.stunned < 100)
 					other.baddieID.stunned = 100
+				other.baddieID.xscale = 1.4
+				other.baddieID.yscale = 0.6	
 				if key_jump2
 				{
 					instance_create(x, (y + 50), obj_stompeffect)
