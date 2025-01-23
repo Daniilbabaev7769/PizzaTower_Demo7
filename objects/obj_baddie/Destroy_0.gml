@@ -54,6 +54,11 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
 	obj_tv.image_index = random_range(0, 4)
 	global.combo += 1
 	obj_tv.comboshake = 10
+	if (irandom(6) == 2)
+    {
+        with (instance_create(x, y, obj_ammocollect))
+            sprite_index = spr_bulletHUD
+    }
 	if (global.timeattack == 0)
 	{
 		if (global.combo == 1)
