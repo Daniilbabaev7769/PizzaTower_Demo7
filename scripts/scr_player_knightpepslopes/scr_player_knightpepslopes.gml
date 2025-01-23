@@ -22,17 +22,6 @@ function scr_player_knightpepslopes() {
 		sprite_index = spr_knightpepcharge
 	if scr_slope()
 		sprite_index = spr_knightpepdownslope
-	if (flamecloud_buffer > 0)
-		flamecloud_buffer--
-	else
-	{
-		flamecloud_buffer = 10
-		with (instance_create(x, y, obj_dashcloud))
-		{
-			image_xscale = other.xscale
-            sprite_index = spr_flamecloud
-		}
-	}	
 	if (input_buffer_jump < 8)
     {
         if (grounded || (!doublejump))
