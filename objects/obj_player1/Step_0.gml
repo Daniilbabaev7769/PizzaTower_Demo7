@@ -300,6 +300,8 @@ switch state
 if (room == Realtitlescreen)
 	state = states.titlescreen
 scr_playersounds()
+if (state != states.pistol && state != states.normal)
+    shoot = 0
 if (global.coop == 0)
 	fightball = 0
 if (state != states.mach3 && state != states.grabbed)

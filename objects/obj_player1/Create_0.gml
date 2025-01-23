@@ -333,3 +333,5 @@ parry_count = 0
 parry_max = 8
 flamecloud_buffer = 0
 doublejump = 0
+global.bullet = 3
+global.fuel = 3

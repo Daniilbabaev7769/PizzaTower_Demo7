@@ -131,7 +131,6 @@ function scr_playerreset() {
 		machpunchAnim = 0
 		punch = 0
 		machfreefall = 0
-		shoot = 1
 		instakillmove = 0
 		windingAnim = 0
 		facestompAnim = 0
@@ -159,6 +158,8 @@ function scr_playerreset() {
 		anger = 0
 		angry = 0
 		exitgateblend = 0
+		global.bullet = 3
+		global.fuel = 3
 	}
 	with (obj_player2)
 	{

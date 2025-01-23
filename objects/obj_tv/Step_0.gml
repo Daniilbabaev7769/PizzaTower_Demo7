@@ -156,6 +156,15 @@ else if (obj_player.state == states.skateboard)
 	tvsprite = spr_tvrad
 	once = 1
 }
+else if (obj_player.key_shoot2 && (!obj_player.shotgunAnim))
+{
+    if (obj_player.state == states.pistol)
+    {
+        tvsprite = spr_tvrevolver
+        alarm[0] = 50
+        image_speed = 0.35
+    }
+}
 else if (global.combo != 0 && global.combotime != 0 && (tvsprite == spr_tvdefault || tvsprite == spr_tvcombo || tvsprite == spr_tvescape))
 {
 	tvsprite = spr_tvcombo

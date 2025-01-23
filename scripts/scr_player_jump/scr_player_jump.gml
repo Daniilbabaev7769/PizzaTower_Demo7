@@ -232,7 +232,7 @@ function scr_player_jump() {
 		movespeed = 3
 		vsp = -7
 	}
-	if (key_shoot2 && shotgunAnim == 0)
+	if (key_shoot2 && shotgunAnim == 0 && global.bullet <= 0)
 	{
 		scr_soundeffect(sfx_breakdance)
 		vsp = -4
@@ -243,6 +243,22 @@ function scr_player_jump() {
 		image_index = 0
 		instance_create(x, y, obj_swingdinghitbox)
 	}
+	if (key_shoot2 && shotgunAnim == 0 && global.bullet > 0)
+	{
+		global.bullet--
+                sprite_index = spr_player_pistolshot
+                image_index = 0
+                state = states.pistol
+                shoot = 1
+                with (obj_camera)
+                {
+                    shake_mag = 3
+                    shake_mag_acc = 3 / room_speed
+                }
+				with (instance_create((x + xscale * 20), y, obj_shotgunbullet))
+                        image_xscale = other.xscale
+	}
+
 
 
 }

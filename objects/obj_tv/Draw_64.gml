@@ -30,3 +30,8 @@ var sw = sprite_get_width(spr_barpop)
 var sh = sprite_get_height(spr_barpop)
 var b = global.combotime / 55
 draw_sprite_part(spr_barpop, 1, 0, 0, (sw * b), sh, (832 + barxx), (250 + baryy))
+if (obj_player.character == "P")
+{
+    draw_text(748, 131, string_hash_to_newline(global.bullet))
+    draw_sprite(spr_bulletHUD, -1, 718, 121)
+}
