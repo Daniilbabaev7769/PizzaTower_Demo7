@@ -93,7 +93,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                 else
                 {
 					other.baddieID.hitvsp = -8
-                    other.baddieID.hithsp = (-other.baddieID.image_xscale) * 8
+                    other.baddieID.hithsp = (-other.baddieID.image_xscale) * 25
                 }
                 state = states.chainsaw
 				if global.slop
@@ -156,6 +156,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     tauntstoredstate = state
                     tauntstoredvsp = vsp
 				}
+				scr_soundeffect(sfx_punch)
 				var lag = 10
                 other.baddieID.hitLag = lag
                 other.baddieID.hitX = other.baddieID.x
@@ -180,7 +181,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     shake_mag_acc = 3 / room_speed
                 }
 				other.baddieID.hitvsp = -8
-                other.baddieID.hithsp = (-other.baddieID.image_xscale) * 8
+                other.baddieID.hithsp = (-other.baddieID.image_xscale) * 25
                 state = states.chainsaw
 				with (obj_player)
 				{
