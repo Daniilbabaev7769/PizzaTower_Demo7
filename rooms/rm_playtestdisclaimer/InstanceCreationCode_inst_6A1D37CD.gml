@@ -1,0 +1,4 @@
+text = "THIS IS PLAYTESTER BUILD FOR DEMO 7\nIT'S UNFINISHED AND ANYTHING IS PLACEHOLDER! SO\n DONT LEAK!"
+xorigin = 1
+yorigin = 0
+font = global.smallfont
