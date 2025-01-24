@@ -139,6 +139,9 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"toppin","folderPath":"folders/Sprites/toppin.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"demo 7 shit","folderPath":"folders/Objects/demo 7 shit.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"visuals","folderPath":"folders/Objects/demo 7 shit/visuals.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"collectibles","folderPath":"folders/Objects/demo 7 shit/collectibles.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"desktop.ini","CopyToMask":-1,"filePath":"datafiles/memes",},

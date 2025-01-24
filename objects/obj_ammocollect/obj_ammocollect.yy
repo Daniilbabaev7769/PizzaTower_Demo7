@@ -13,8 +13,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "collectibles",
+    "path": "folders/Objects/demo 7 shit/collectibles.yy",
   },
   "parentObjectId": null,
   "persistent": false,

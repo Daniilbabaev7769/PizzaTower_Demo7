@@ -41,5 +41,5 @@
     "path": "sprites/sprite1030/sprite1030.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
