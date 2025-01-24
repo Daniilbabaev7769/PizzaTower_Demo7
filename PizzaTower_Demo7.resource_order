@@ -193,6 +193,7 @@
     {"name":"spr_sausagemannocigar_walk","order":37,"path":"sprites/spr_sausagemannocigar_walk/spr_sausagemannocigar_walk.yy",},
     {"name":"spr_sausageman_walk","order":38,"path":"sprites/spr_sausageman_walk/spr_sausageman_walk.yy",},
     {"name":"spr_sausagemannocigar_idle","order":39,"path":"sprites/spr_sausagemannocigar_idle/spr_sausagemannocigar_idle.yy",},
+    {"name":"scr_player_lungeattack","order":97,"path":"scripts/scr_player_lungeattack/scr_player_lungeattack.yy",},
     {"name":"spr_sausageman_idle","order":40,"path":"sprites/spr_sausageman_idle/spr_sausageman_idle.yy",},
     {"name":"obj_text","order":17,"path":"objects/obj_text/obj_text.yy",},
     {"name":"spr_pizzagoblin_grabbed","order":1,"path":"sprites/spr_pizzagoblin_grabbed/spr_pizzagoblin_grabbed.yy",},

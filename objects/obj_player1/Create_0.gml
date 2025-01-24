@@ -113,12 +113,13 @@ enum states
 		unused_9,
 	
 	grabbed, // its also used by the player for coop
-	shoulderbash,
+	shoulderbash, // shoulder bash from april 2021
 	golf,
 	shoryuken,
 	breakdance,
 	bombpepNEW,
-	parry
+	parry,
+	lungeattack
 }
 
 scr_initinput()
@@ -335,3 +336,4 @@ flamecloud_buffer = 0
 doublejump = 0
 global.bullet = 3
 global.fuel = 3
+global.lungeattack = 1

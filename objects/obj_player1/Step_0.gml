@@ -295,6 +295,9 @@ switch state
 	case states.parry:
 		scr_player_parry()
 		break
+	case states.lungeattack:
+		scr_player_lungeattack()
+		break
 }
 
 if (room == Realtitlescreen)

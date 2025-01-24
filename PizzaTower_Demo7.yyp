@@ -297,6 +297,7 @@
     {"id":{"name":"spr_sausagemannocigar_walk","path":"sprites/spr_sausagemannocigar_walk/spr_sausagemannocigar_walk.yy",},},
     {"id":{"name":"spr_sausageman_walk","path":"sprites/spr_sausageman_walk/spr_sausageman_walk.yy",},},
     {"id":{"name":"spr_sausagemannocigar_idle","path":"sprites/spr_sausagemannocigar_idle/spr_sausagemannocigar_idle.yy",},},
+    {"id":{"name":"scr_player_lungeattack","path":"scripts/scr_player_lungeattack/scr_player_lungeattack.yy",},},
     {"id":{"name":"spr_sausageman_idle","path":"sprites/spr_sausageman_idle/spr_sausageman_idle.yy",},},
     {"id":{"name":"spr_pizzagoblin_dead","path":"sprites/spr_pizzagoblin_dead/spr_pizzagoblin_dead.yy",},},
     {"id":{"name":"obj_text","path":"objects/obj_text/obj_text.yy",},},
