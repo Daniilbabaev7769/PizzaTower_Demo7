@@ -4,6 +4,7 @@ if (sprite_index == spr_bulletHUD && global.bullet < 3)
     with (instance_create(x, y, obj_smallletters))
         letters = "BULLET"
     instance_destroy()
+	scr_soundeffect(sfx_collectpizza)
 }
 if (sprite_index == spr_fuelHUD && global.fuel < 3)
 {

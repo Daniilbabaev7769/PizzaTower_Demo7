@@ -170,6 +170,11 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
 				instance_create(other.baddieID.x, other.baddieID.y, obj_parryeffect)
                 other.baddieID.alarm[3] = 3
                 other.baddieID.state = states.enemy_hit
+				with (instance_create(x, y, obj_afterimage))
+				{
+					sprite_index = other.baddieID.sprite_index
+					image_xscale = other.baddieID.image_xscale
+				}
                 other.baddieID.image_xscale = (-xscale)
                 instance_create(x, y, obj_slapstar)
                 instance_create(x, y, obj_slapstar)
@@ -183,7 +188,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     shake_mag_acc = 3 / room_speed
                 }
 				other.baddieID.hitvsp = -8
-                other.baddieID.hithsp = (-other.baddieID.image_xscale) * 25
+                other.baddieID.hithsp = (-other.baddieID.image_xscale) * 8
                 state = states.chainsaw
 				with (obj_player)
 				{

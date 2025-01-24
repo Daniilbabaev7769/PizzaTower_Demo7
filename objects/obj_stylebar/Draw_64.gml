@@ -1,4 +1,3 @@
-draw_text(100, 200, string_hash_to_newline(string(global.style)))
 if (global.stylethreshold == 4)
 {
 	draw_sprite_ext(spr_stylepizza, 4, 832, 74, image_xscale, image_yscale, 0, c_white, alpha)

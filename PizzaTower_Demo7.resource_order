@@ -2236,6 +2236,7 @@
     {"name":"PP_room12","order":10,"path":"rooms/PP_room12/PP_room12.yy",},
     {"name":"PP_room13","order":11,"path":"rooms/PP_room13/PP_room13.yy",},
     {"name":"PP_room14","order":12,"path":"rooms/PP_room14/PP_room14.yy",},
+    {"name":"obj_afterimage","order":49,"path":"objects/obj_afterimage/obj_afterimage.yy",},
     {"name":"medieval_secret1","order":1,"path":"rooms/medieval_secret1/medieval_secret1.yy",},
     {"name":"medieval_2","order":2,"path":"rooms/medieval_2/medieval_2.yy",},
     {"name":"medieval_secret2","order":3,"path":"rooms/medieval_secret2/medieval_secret2.yy",},

@@ -2433,6 +2433,7 @@
     {"id":{"name":"PP_room13","path":"rooms/PP_room13/PP_room13.yy",},},
     {"id":{"name":"PP_room14","path":"rooms/PP_room14/PP_room14.yy",},},
     {"id":{"name":"medieval_1","path":"rooms/medieval_1/medieval_1.yy",},},
+    {"id":{"name":"obj_afterimage","path":"objects/obj_afterimage/obj_afterimage.yy",},},
     {"id":{"name":"medieval_secret1","path":"rooms/medieval_secret1/medieval_secret1.yy",},},
     {"id":{"name":"medieval_2","path":"rooms/medieval_2/medieval_2.yy",},},
     {"id":{"name":"medieval_secret2","path":"rooms/medieval_secret2/medieval_secret2.yy",},},
