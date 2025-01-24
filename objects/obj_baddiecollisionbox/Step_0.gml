@@ -33,7 +33,7 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
 				else
 					other.baddieID.grabbedby = 2
 				scr_soundeffect(sfx_punch);
-				if (state == states.mach3 || state == states.tumble || (state == states.freefall && freefallsmash > 10) || state == states.superslam || state == states.chainsawbump || state == states.punch || state == states.firemouth || state == states.knightpep || state == states.knightpepslopes || state == states.grab || state == states.shoryuken)
+				if (state == states.mach3 || state == states.tumble || (state == states.freefall && freefallsmash > 10) || state == states.superslam || state == states.chainsawbump || state == states.punch || state == states.firemouth || state == states.knightpep || state == states.knightpepslopes || state == states.grab || state == states.shoryuken || state == states.lungeattack)
 				{
 			        if (!other.baddieID.killprotection)
 		            {

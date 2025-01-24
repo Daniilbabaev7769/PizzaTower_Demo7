@@ -1,7 +1,7 @@
 function scr_collide_destructibles() {
 	with (obj_player1)
 	{
-		if (state == states.mach2 or state == states.mach3 or state == states.machroll or state == states.knightpepslopes or state == states.tumble or state == states.hookshot or state == states.tacklecharge or (state == states.fireass && sprite_index == spr_player_fireassdash && sprite_index == spr_player_fireassdashfall) or state == states.breakdance or state == states.slipnslide)
+		if (state == states.mach2 or state == states.mach3 or state == states.machroll or state == states.knightpepslopes or state == states.tumble or state == states.hookshot or state == states.tacklecharge or (state == states.fireass && sprite_index == spr_player_fireassdash && sprite_index == spr_player_fireassdashfall) or state == states.breakdance or state == states.slipnslide or state == states.lungeattack)
 		{
 			if place_meeting((x + hsp), y, obj_destructibles)
 			{

@@ -115,7 +115,7 @@ function scr_player_handstandjump() {
 		}
 	}
 	image_speed = 0.35
-	if key_slap2
+	if (key_slap2 && (!global.lungeattack))
 	{
 		instance_create(x, y, obj_crazyrunothereffect)
 		state = states.shoulderbash
@@ -128,7 +128,13 @@ function scr_player_handstandjump() {
 			movespeed = 11
 		image_index = 0
 	}
-		
+	if (key_slap2 && global.lungeattack)
+	{
+		state = states.lungeattack
+		sprite_index = spr_player_lungestart
+		image_index = 0
+		movespeed = 12
+	}
 
 
 
