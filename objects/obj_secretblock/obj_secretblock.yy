@@ -41,5 +41,5 @@
     "path": "sprites/sprite1029/sprite1029.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

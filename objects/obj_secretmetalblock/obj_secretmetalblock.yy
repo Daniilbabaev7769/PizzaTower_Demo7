@@ -36,5 +36,5 @@
     "path": "sprites/spr_metalb/spr_metalb.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }
