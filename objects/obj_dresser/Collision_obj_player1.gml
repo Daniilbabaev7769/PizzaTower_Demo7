@@ -3,7 +3,7 @@ if obj_player1.key_up2
 	switch obj_player.character
 	{
 		case "P":
-			if (obj_player1.paletteselect < 6)
+			if (obj_player1.paletteselect < 5)
 				obj_player1.paletteselect += 1
 			else
 				obj_player1.paletteselect = 1

@@ -2107,6 +2107,7 @@
     {"name":"obj_donesign","order":6,"path":"objects/obj_donesign/obj_donesign.yy",},
     {"name":"obj_Hranksign","order":7,"path":"objects/obj_Hranksign/obj_Hranksign.yy",},
     {"name":"obj_press","order":8,"path":"objects/obj_press/obj_press.yy",},
+    {"name":"spr_ruin_5","order":31,"path":"sprites/spr_ruin_5/spr_ruin_5.yy",},
     {"name":"obj_uparrow","order":9,"path":"objects/obj_uparrow/obj_uparrow.yy",},
     {"name":"obj_creditimages","order":10,"path":"objects/obj_creditimages/obj_creditimages.yy",},
     {"name":"obj_leveltitles","order":11,"path":"objects/obj_leveltitles/obj_leveltitles.yy",},

@@ -2297,6 +2297,7 @@
     {"id":{"name":"obj_donesign","path":"objects/obj_donesign/obj_donesign.yy",},},
     {"id":{"name":"obj_Hranksign","path":"objects/obj_Hranksign/obj_Hranksign.yy",},},
     {"id":{"name":"obj_press","path":"objects/obj_press/obj_press.yy",},},
+    {"id":{"name":"spr_ruin_5","path":"sprites/spr_ruin_5/spr_ruin_5.yy",},},
     {"id":{"name":"obj_uparrow","path":"objects/obj_uparrow/obj_uparrow.yy",},},
     {"id":{"name":"obj_creditimages","path":"objects/obj_creditimages/obj_creditimages.yy",},},
     {"id":{"name":"obj_leveltitles","path":"objects/obj_leveltitles/obj_leveltitles.yy",},},
