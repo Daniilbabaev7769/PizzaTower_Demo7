@@ -1,6 +1,6 @@
-    if (state == states.handstandjump)
+    if (state == states.handstandjump || state == states.shoulderbash)
     {
-        if (other.state == states.normal && (!cutscene) && state != states.bombpepNEW && (state == states.handstandjump || state == states.punch))
+        if (other.state == states.normal && (!cutscene) && state != states.bombpepNEW && (state == states.handstandjump || state == states.shoulderbash || state == states.punch))
         {
             state = states.bombpepNEW
             image_index = 0
