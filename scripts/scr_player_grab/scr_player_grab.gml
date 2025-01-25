@@ -119,6 +119,8 @@ function scr_player_grab() {
     else
     {
         hsp = xscale * movespeed
+		if (movespeed < 12)
+			movespeed += 0.1
         if (scr_solid((x + xscale), y) && ((!(place_meeting((x + sign(hsp)), y, obj_slope))) || scr_solid_slope((x + sign(hsp)), y)))
             xscale *= -1
         if (swingdingbuffer == 0 && (!key_attack))
@@ -159,7 +161,7 @@ function scr_player_grab() {
         sprite_index = spr_swingding
         with (instance_create(x, y, obj_jumpdust))
             image_xscale = other.xscale
-        movespeed = 12
+        movespeed = 5
         with (instance_create(x, y, obj_swingdinghitbox))
             playerid = other.object_index
         flash = 1
@@ -170,21 +172,12 @@ function scr_player_grab() {
         if (movespeed > 0)
             movespeed -= 0.1
     }
-	if (swingdingbuffer > 300 && sprite_index != spr_swingding)
-	{
-		sprite_index = spr_swingding
-		with (instance_create(x, y, obj_swingdinghitbox))
-			playerid = other.object_index
-		flash = 1
-	}
-	if key_slap2
+	if (key_slap2 && sprite_index != spr_swingding)
 	{
 		if (move != 0)
 			move = xscale
 		state = states.finishingblow
-		if (sprite_index == spr_swingding)
-			sprite_index = spr_swingdingend
-		else if (!key_up)
+		if (!key_up)
 			sprite_index = choose(spr_finishingblow1, spr_finishingblow2, spr_finishingblow3, spr_finishingblow4, spr_finishingblow5)
 		else if key_up
 			sprite_index = spr_uppercutfinishingblow
@@ -217,7 +210,7 @@ function scr_player_grab() {
 	if (sprite_index != spr_swingding)
 		image_speed = 0.35
 	else
-		image_speed = 0.6
+		image_speed = movespeed / 24
 
 
 

@@ -237,6 +237,8 @@ if (obj_player.state != states.gameover)
 			else
 				draw_set_color(c_white)
 			draw_text((random_range(1, -1) + 480), (random_range(1, -1) + 65), string_hash_to_newline(string_hash_to_newline(((string(global.minutes) + ":") + string(global.seconds)))))
+			if (global.minutes == 0 && global.seconds <= 10)
+				scr_soundeffect(mu_dungeondepth)
 		}
 	}
 	if (global.key_inv == 1)
