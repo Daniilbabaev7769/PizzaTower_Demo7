@@ -1385,6 +1385,7 @@
     {"id":{"name":"spr_tntblock","path":"sprites/spr_tntblock/spr_tntblock.yy",},},
     {"id":{"name":"spr_haystack","path":"sprites/spr_haystack/spr_haystack.yy",},},
     {"id":{"name":"spr_haystackburningup","path":"sprites/spr_haystackburningup/spr_haystackburningup.yy",},},
+    {"id":{"name":"spr_player_lungeattack","path":"sprites/spr_player_lungeattack/spr_player_lungeattack.yy",},},
     {"id":{"name":"spr_haystackburning","path":"sprites/spr_haystackburning/spr_haystackburning.yy",},},
     {"id":{"name":"bg_hubworld1","path":"sprites/bg_hubworld1/bg_hubworld1.yy",},},
     {"id":{"name":"spr_boxofpizza","path":"sprites/spr_boxofpizza/spr_boxofpizza.yy",},},

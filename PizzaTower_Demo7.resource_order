@@ -1234,6 +1234,7 @@
     {"name":"spr_tntblock","order":17,"path":"sprites/spr_tntblock/spr_tntblock.yy",},
     {"name":"spr_haystack","order":18,"path":"sprites/spr_haystack/spr_haystack.yy",},
     {"name":"spr_haystackburningup","order":19,"path":"sprites/spr_haystackburningup/spr_haystackburningup.yy",},
+    {"name":"spr_player_lungeattack","order":261,"path":"sprites/spr_player_lungeattack/spr_player_lungeattack.yy",},
     {"name":"spr_haystackburning","order":20,"path":"sprites/spr_haystackburning/spr_haystackburning.yy",},
     {"name":"bg_hubworld1","order":140,"path":"sprites/bg_hubworld1/bg_hubworld1.yy",},
     {"name":"spr_boxofpizza","order":21,"path":"sprites/spr_boxofpizza/spr_boxofpizza.yy",},

@@ -1,14 +1,15 @@
 function scr_player_lungeattack()
 {
 	hsp = xscale * movespeed
-	if (sprite_index != spr_player_lungehit)
-		move = key_left + key_right
+	move = key_left + key_right
     vsp = 0
-	if (move != xscale && move != 0)
-		state = states.normal;	
     image_speed = 0.35
 	if (sprite_index == spr_player_lungestart && floor(image_index) == (image_number - 1))
         sprite_index = spr_player_lunge
+	if (move != xscale && move != 0)
+		state = states.normal;
+	if (move != 0 && sprite_index == spr_player_lungehit)
+		xscale = move	
 	if (scr_solid((x + 1), y) && xscale == 1 && (!(place_meeting((x + sign(hsp)), y, obj_slope))) && (!(place_meeting((x + xscale), y, obj_destructibles))))
 	{
 		scr_soundeffect(sfx_bumpwall);

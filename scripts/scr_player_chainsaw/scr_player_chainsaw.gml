@@ -1,15 +1,13 @@
 function scr_player_chainsaw() //gml_Script_scr_player_chainsaw
 {
-    hsp = 0
-    vsp = 0
+	hsp = 0
+	vsp = 0
     x = hitX + (random_range(-4, 4))
     y = hitY + (random_range(-4, 4))
     hitLag--
     if key_jump
-        input_buffer_jump = 0
+        input_buffer_jump = 0	
 	image_speed = 0
-	if (sprite_index == spr_player_lungehit)
-		image_speed = 0.35
     if (hitLag <= 0)
     {
         x = hitX
@@ -33,7 +31,8 @@ function scr_player_chainsaw() //gml_Script_scr_player_chainsaw
 		if (tauntstoredstate == states.lungeattack)
 		{
 			with (obj_player)
-			{
+			{	
+				state = states.lungeattack
 				sprite_index = spr_player_lungehit
 				image_index = 0
 			}

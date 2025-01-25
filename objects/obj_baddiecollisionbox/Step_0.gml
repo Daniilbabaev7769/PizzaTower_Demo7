@@ -57,7 +57,10 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     tauntstoredstate = state
                     tauntstoredvsp = vsp
 				}
-				var lag = 5
+				if (state != states.lungeattack)
+					var lag = 5
+				else
+					lag = 15
                 other.baddieID.hitLag = lag
                 other.baddieID.hitX = other.baddieID.x
                 other.baddieID.hitY = other.baddieID.y
