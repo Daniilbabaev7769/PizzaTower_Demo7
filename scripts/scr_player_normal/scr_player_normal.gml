@@ -257,6 +257,16 @@ function scr_player_normal() {
 			sprite_index = spr_shotgunsuplexdash
 		movespeed = 6
 	}
+	if (key_slap2 && (!((shotgunAnim == 1 && key_up))) && global.shoulderbashnondoublegrab == 1 && character == "P")
+	{
+		suplexmove = 1
+		suplexdashsnd = audio_play_sound(sfx_suplexdash, 1, false)
+		state = states.shoulderbash
+		image_index = 0
+		sprite_index = spr_player_attackdash
+		movespeed = 8
+		instance_create(x, y, obj_crazyrunothereffect)
+	}
 	if (key_slap2 && shotgunAnim == 1 && key_up)
 	{
 		scr_soundeffect(sfx_killingblow);

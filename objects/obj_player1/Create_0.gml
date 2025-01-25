@@ -336,4 +336,5 @@ flamecloud_buffer = 0
 doublejump = 0
 global.bullet = 3
 global.fuel = 3
-global.lungeattack = 1
+global.lungeattack = 0
+global.shoulderbashnondoublegrab = 1

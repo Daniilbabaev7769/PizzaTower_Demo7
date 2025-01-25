@@ -115,7 +115,7 @@ function scr_player_handstandjump() {
 		}
 	}
 	image_speed = 0.35
-	if (key_slap2 && (!global.lungeattack))
+	if (key_slap2 && (!global.lungeattack) && global.shoulderbashnondoublegrab == 0)
 	{
 		instance_create(x, y, obj_crazyrunothereffect)
 		state = states.shoulderbash
