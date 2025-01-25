@@ -1,10 +1,15 @@
 function scr_player_finishingblow() {
-	hsp = 0
-	vsp = 0
+	hsp = (xscale * movespeed)
+	if (movespeed > 0)
+		movespeed -= 0.5
+	if (image_index < 5)
+		vsp = 0
 	if (floor(image_index) == (image_number - 1))
 		state = states.normal;
 	if (floor(image_index) == 5 && (!instance_exists(obj_swordhitbox)))
 	{
+		movespeed = -4
+		vsp = -4
 		scr_soundeffect(sfx_punch);
 		scr_soundeffect(sfx_killingblow);
 		with (instance_create(x, y, obj_swordhitbox))

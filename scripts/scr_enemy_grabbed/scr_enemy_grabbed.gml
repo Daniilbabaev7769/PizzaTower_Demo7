@@ -398,6 +398,15 @@ function scr_enemy_grabbed() {
 				y = obj_player1.y
 			}
 		}
+		if (state != states.grabbed || obj_player.state != states.grab)
+        {
+            check_grabbed_solid(obj_player)
+            if (state == states.enemy_hit)
+            {
+                hitX = x
+                hitY = y
+            }
+        }
 	}
 	if (grabbedby == 2)
 	{
