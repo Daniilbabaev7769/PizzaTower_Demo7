@@ -208,7 +208,7 @@ function scr_player_grab() {
 	if (sprite_index != spr_swingding)
 		image_speed = 0.35
 	else
-		image_speed = movespeed / 24
+		image_speed = 0.65
 
 
 

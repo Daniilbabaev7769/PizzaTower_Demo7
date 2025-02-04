@@ -24,13 +24,13 @@ function scr_player_mach3() {
 			y = obj_player1.y
 		}
 	}
-	if (sprite_index == spr_crazyrun)
+	if (sprite_index == spr_mach4 || sprite_index == spr_crazyrun)
 	{
                 if (flamecloud_buffer > 0)
                     flamecloud_buffer--
                 else
                 {
-                    flamecloud_buffer = 0
+                    flamecloud_buffer = 10
                     with (instance_create(x, y, obj_dashcloud))
                     {
                         image_xscale = other.xscale

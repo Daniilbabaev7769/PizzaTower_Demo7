@@ -39,7 +39,7 @@ function scr_player_climbwall() {
 	}
 	if key_jump
 	{
-		movespeed = 8
+		movespeed = 10
 		state = states.mach2
 		image_index = 0
 		sprite_index = spr_walljumpstart

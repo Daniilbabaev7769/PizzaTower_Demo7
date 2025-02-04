@@ -416,7 +416,7 @@ if (state != states.jump)
 	ladderbuffer = 0
 if (state != states.jump)
 	stompAnim = 0
-if ((state == states.mach3 or (state == states.grabbed && instance_exists(obj_player2) && obj_player2.state == states.mach3) or state == states.mach2 or state == states.climbwall or state == states.hookshot or state == states.machroll or state == states.tacklecharge or state == states.handstandjump or state == states.machslide or state == states.shoryuken or state == states.freefall or state == states.shoulderbash or state == states.breakdance or state == states.Sjump or state == states.lungeattack) && macheffect == 0)
+if ((state == states.mach3 or (state == states.grabbed && instance_exists(obj_player2) && obj_player2.state == states.mach3) or state == states.mach2 or state == states.climbwall or state == states.hookshot or state == states.machroll or state == states.tacklecharge or state == states.handstandjump or state == states.machslide or state == states.shoryuken or state == states.shoulderbash or state == states.breakdance or state == states.Sjump or state == states.lungeattack) && macheffect == 0)
 {
 	macheffect = 1
 	toomuchalarm1 = 6
@@ -428,12 +428,12 @@ if ((state == states.mach3 or (state == states.grabbed && instance_exists(obj_pl
 		sprite_index = other.sprite_index
 	}
 }
-if (!((state == states.mach3 or (state == states.grabbed && instance_exists(obj_player2) && obj_player2.state == states.mach3) or state == states.mach2 or state == states.climbwall or state == states.hookshot or state == states.machroll or state == states.tacklecharge or state == states.handstandjump or state == states.machslide or state == states.shoryuken or state == states.freefall or state == states.shoulderbash or state == states.breakdance or state == states.Sjump or state == states.lungeattack)))
+if (!((state == states.mach3 or (state == states.grabbed && instance_exists(obj_player2) && obj_player2.state == states.mach3) or state == states.mach2 or state == states.climbwall or state == states.hookshot or state == states.machroll or state == states.tacklecharge or state == states.handstandjump or state == states.machslide or state == states.shoryuken or state == states.shoulderbash or state == states.breakdance or state == states.Sjump or state == states.lungeattack)))
 	macheffect = 0
 if (toomuchalarm1 > 0)
 {
 	toomuchalarm1 -= 1
-	if (toomuchalarm1 <= 0 && (state == states.mach3 or (state == states.grabbed && instance_exists(obj_player2) && obj_player2.state == states.mach3) or state == states.climbwall or state == states.hookshot or state == states.mach2 or state == states.tacklecharge or state == states.machslide or state == states.machroll or state == states.handstandjump or state == states.shoryuken or state == states.freefall or state == states.shoulderbash or state == states.breakdance or state == states.Sjump or state == states.lungeattack or (state == states.chainsaw && mach2 >= 100)))
+	if (toomuchalarm1 <= 0 && (state == states.mach3 or (state == states.grabbed && instance_exists(obj_player2) && obj_player2.state == states.mach3) or state == states.climbwall or state == states.hookshot or state == states.mach2 or state == states.tacklecharge or state == states.machslide or state == states.machroll or state == states.handstandjump or state == states.shoryuken or state == states.shoulderbash or state == states.breakdance or state == states.Sjump or state == states.lungeattack or (state == states.chainsaw && mach2 >= 100)))
 	{
 		with (instance_create(x, y, obj_mach3effect))
 		{
