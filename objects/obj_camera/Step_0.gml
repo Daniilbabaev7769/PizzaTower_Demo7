@@ -96,35 +96,41 @@ if (obj_player1.state != states.golf)
 }
 if (instance_exists(player) && player.state != states.timesup && player.state != states.gameover && (!follow_golf) && (!detach))
 {
-    var target = player
-    var coopdistance = distance_to_object(obj_player2) / 2
-    if (player.state == states.mach3 || player.state == states.machroll || player.state == states.tacklecharge)
-    {
-        if (chargecamera > (player.xscale * 100))
-            chargecamera -= 2
-        if (chargecamera < (player.xscale * 100))
-            chargecamera += 2
-        __view_set((0 << 0), 0, (target.x - (__view_get((2 << 0), 0)) / 2 + chargecamera + p2pdistancex))
+        var target = player
+        var coopdistance = distance_to_object(obj_player2) / 2
+        if (player.state == states.mach3 || player.state == states.tumble || player.state == states.machroll)
+        {
+            var _targetcharge = player.xscale * player.movespeed / 4 * 50
+            var _tspeed = 2
+            if ((_targetcharge > 0 && chargecamera < 0) || (_targetcharge < 0 && chargecamera > 0))
+                _tspeed = 8
+            if (chargecamera > _targetcharge)
+                chargecamera -= _tspeed
+            if (chargecamera < _targetcharge)
+                chargecamera += _tspeed
+        }
+        else if (player.state == states.machslide)
+            chargecamera = Approach(chargecamera, 0, 8)
+        else
+        {
+            if (chargecamera > 0)
+                chargecamera -= 2
+            if (chargecamera < 0)
+                chargecamera += 2
+        }
+        var cam_width = camera_get_view_width(view_camera[0])
+        var cam_height = camera_get_view_height(view_camera[0])
+            var cam_x = target.x - cam_width / 2 + chargecamera + p2pdistancex
+            var cam_y = target.y - cam_height / 2
+            cam_x = clamp(cam_x, 0, (room_width - cam_width))
+            cam_y = clamp(cam_y, 0, (room_height - cam_height))
+        if (shake_mag != 0)
+        {
+            cam_x += irandom_range((-shake_mag), shake_mag)
+            cam_y += irandom_range((-shake_mag), shake_mag)
+        }
+        camera_set_view_pos(view_camera[0], cam_x, (cam_y + (irandom_range((-shake_mag), shake_mag))))
     }
-    else
-    {
-        if (chargecamera > 0)
-            chargecamera -= 2
-        if (chargecamera < 0)
-            chargecamera += 2
-        __view_set((0 << 0), 0, (target.x - (__view_get((2 << 0), 0)) / 2 + chargecamera + p2pdistancex))
-    }
-    __view_set((0 << 0), 0, clamp(__view_get((0 << 0), 0), 0, (room_width - (__view_get((2 << 0), 0)))))
-    __view_set((1 << 0), 0, (target.y - (__view_get((3 << 0), 0)) / 2))
-    __view_set((1 << 0), 0, clamp(__view_get((1 << 0), 0), 0, (room_height - (__view_get((3 << 0), 0)))))
-    if (shake_mag != 0)
-    {
-        __view_set((0 << 0), 0, (target.x - (__view_get((2 << 0), 0)) / 2 + chargecamera + p2pdistancex))
-        __view_set((0 << 0), 0, clamp(__view_get((0 << 0), 0), 0, (room_width - (__view_get((2 << 0), 0)))))
-        __view_set((1 << 0), 0, (target.y - (__view_get((3 << 0), 0)) / 2 + (irandom_range((-shake_mag), shake_mag))))
-        __view_set((1 << 0), 0, clamp(__view_get((1 << 0), 0), (0 + (irandom_range((-shake_mag), shake_mag))), (room_height - (__view_get((3 << 0), 0)) + (irandom_range((-shake_mag), shake_mag)))))
-    }
-}
 else if follow_golf
 {
     if (instance_exists(targetgolf) && targetgolf.thrown == 1)

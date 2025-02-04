@@ -30,7 +30,7 @@ function scr_player_mach3() {
                     flamecloud_buffer--
                 else
                 {
-                    flamecloud_buffer = 10
+                    flamecloud_buffer = 0
                     with (instance_create(x, y, obj_dashcloud))
                     {
                         image_xscale = other.xscale
@@ -80,6 +80,8 @@ function scr_player_mach3() {
 		if (floor(image_index) == (image_number - 1) && (sprite_index == spr_rollgetup or sprite_index == spr_mach3hit or sprite_index == spr_player_dashpad))
 			sprite_index = spr_mach4
 		if (sprite_index == spr_mach2jump && grounded && vsp > 0)
+			sprite_index = spr_mach4
+		if (sprite_index == spr_player_Sjumpcancel && grounded && vsp > 0)
 			sprite_index = spr_mach4
 		if (movespeed > 20 && sprite_index != spr_crazyrun)
 		{

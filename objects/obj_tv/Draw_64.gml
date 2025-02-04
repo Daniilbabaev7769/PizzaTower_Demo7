@@ -30,8 +30,43 @@ var sw = sprite_get_width(spr_barpop)
 var sh = sprite_get_height(spr_barpop)
 var b = global.combotime / 55
 draw_sprite_part(spr_barpop, 1, 0, 0, (sw * b), sh, (832 + barxx), (250 + baryy))
-if (obj_player.character == "P")
-{
-    draw_text(748, 141, string_hash_to_newline(global.bullet))
-    draw_sprite(spr_bulletHUD, -1, 718, 121)
-}
+//if (obj_player.character == "P")
+//{
+//    if (global.bullet == 1)
+//		draw_sprite_ext(spr_bulletHUD, -1, 768, 145, 1, 1, 0, c_white, alpha)
+//	if (global.bullet == 2)
+//	{
+//		draw_sprite_ext(spr_bulletHUD, -1, 768, 145, 1, 1, 0, c_white, alpha)
+//		draw_sprite_ext(spr_bulletHUD, -1, 778, 145, 1, 1, 0, c_white, alpha)
+//	}
+//	if (global.bullet >= 3)
+//	{
+//		draw_sprite_ext(spr_bulletHUD, -1, 768, 145, 1, 1, 0, c_white, alpha)
+//		draw_sprite_ext(spr_bulletHUD, -1, 778, 145, 1, 1, 0, c_white, alpha)
+//		draw_sprite_ext(spr_bulletHUD, -1, 788, 145, 1, 1, 0, c_white, alpha)
+//	}
+//	if (global.bullet >= 4)
+//	{
+//		draw_sprite_ext(spr_bulletHUD, -1, 768, 145, 1, 1, 0, c_white, alpha)
+//		draw_sprite_ext(spr_bulletHUD, -1, 778, 145, 1, 1, 0, c_white, alpha)
+//		draw_sprite_ext(spr_bulletHUD, -1, 788, 145, 1, 1, 0, c_white, alpha)
+//		draw_sprite_ext(spr_bulletHUD, -1, 798, 145, 1, 1, 0, c_white, alpha)
+//	}
+//	if (global.bullet >= 5)
+//	{
+//		draw_sprite_ext(spr_bulletHUD, -1, 768, 145, 1, 1, 0, c_white, alpha)
+//		draw_sprite_ext(spr_bulletHUD, -1, 778, 145, 1, 1, 0, c_white, alpha)
+//		draw_sprite_ext(spr_bulletHUD, -1, 788, 145, 1, 1, 0, c_white, alpha)
+//		draw_sprite_ext(spr_bulletHUD, -1, 798, 145, 1, 1, 0, c_white, alpha)
+//		draw_sprite_ext(spr_bulletHUD, -1, 808, 145, 1, 1, 0, c_white, alpha)
+//	}
+//	if (global.bullet >= 6)
+//	{
+//		draw_sprite_ext(spr_bulletHUD, -1, 768, 145, 1, 1, 0, c_white, alpha)
+//		draw_sprite_ext(spr_bulletHUD, -1, 778, 145, 1, 1, 0, c_white, alpha)
+//		draw_sprite_ext(spr_bulletHUD, -1, 788, 145, 1, 1, 0, c_white, alpha)
+//		draw_sprite_ext(spr_bulletHUD, -1, 798, 145, 1, 1, 0, c_white, alpha)
+//		draw_sprite_ext(spr_bulletHUD, -1, 808, 145, 1, 1, 0, c_white, alpha)
+//		draw_sprite_ext(spr_bulletHUD, -1, 818, 145, 1, 1, 0, c_white, alpha)
+//	}
+//}

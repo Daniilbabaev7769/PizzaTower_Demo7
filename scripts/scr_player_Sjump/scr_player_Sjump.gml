@@ -45,22 +45,27 @@ function scr_player_Sjump() {
 		state = states.Sjumpland
 		machhitAnim = 0
 	}
-	if (key_attack2 && global.coop == 0 && character == "P")
-	{
-		if (move != 0)
-			xscale = move
-		movespeed = 12
-		machhitAnim = 0
-		state = states.mach3
-		flash = 1
-		sprite_index = spr_player_dashpad
-		instance_create(x, y, obj_jumpdust)
-		if global.slop
-		{
-			instance_create(x, y, obj_mach3effect1)
-			instance_create(x, y, obj_mach3effect2)	
-		}
-	}
+	if (key_attack2 && character == "P" && sprite_index != spr_player_Sjumpcancelstart)
+    {
+        image_index = 0
+        sprite_index = spr_player_Sjumpcancelstart
+    }
+    if (sprite_index == spr_player_Sjumpcancelstart)
+    {
+        vsp = 0
+        if (move != 0)
+            xscale = move
+        if (floor(image_index) == (image_number - 1))
+        {
+            vsp = -5
+            movespeed = 12
+            image_index = 0
+            sprite_index = spr_player_Sjumpcancel
+            state = states.mach3
+            with (instance_create(x, y, obj_crazyruneffect))
+                image_xscale = other.xscale
+        }
+    }
 	if (key_attack2 && character == "N")
 	{
 		image_speed = 0.5

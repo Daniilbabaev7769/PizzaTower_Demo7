@@ -158,7 +158,7 @@ function scr_playerreset() {
 		anger = 0
 		angry = 0
 		exitgateblend = 0
-		global.bullet = 3
+		global.bullet = 6
 		global.fuel = 3
 	}
 	with (obj_player2)

@@ -1,1 +1,1 @@
-targetRoom = ruin_4
+targetRoom = ruin_1

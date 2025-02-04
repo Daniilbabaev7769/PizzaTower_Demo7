@@ -1,4 +1,4 @@
-if (sprite_index == spr_bulletHUD && global.bullet < 3)
+if (sprite_index == spr_bulletHUD && global.bullet < 6)
 {
     global.bullet += 1
     with (instance_create(x, y, obj_smallletters))
