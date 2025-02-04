@@ -32,6 +32,10 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
 	ds_list_add(global.baddieroom, id)
 	obj_tv.image_index = random_range(0, 4)
 	global.combo += 1
+	if (state == states.mach3)
+		global.style += (10 + global.combo)
+	else
+		global.style += (5 + global.combo)
 	obj_tv.comboshake = 10
 	//if (irandom(6) == 2)
     //{

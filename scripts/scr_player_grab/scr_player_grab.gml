@@ -119,8 +119,6 @@ function scr_player_grab() {
     else
     {
         hsp = xscale * movespeed
-		if (movespeed < 12)
-			movespeed += 0.1
         if (scr_solid((x + xscale), y) && ((!(place_meeting((x + sign(hsp)), y, obj_slope))) || scr_solid_slope((x + sign(hsp)), y)))
             xscale *= -1
         if (swingdingbuffer == 0 && (!key_attack))
@@ -161,7 +159,7 @@ function scr_player_grab() {
         sprite_index = spr_swingding
         with (instance_create(x, y, obj_jumpdust))
             image_xscale = other.xscale
-        movespeed = 5
+        movespeed = 12
         with (instance_create(x, y, obj_swingdinghitbox))
             playerid = other.object_index
         flash = 1
