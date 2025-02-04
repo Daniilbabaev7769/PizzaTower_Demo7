@@ -1,1 +1,1 @@
-room_goto(rm_playtestdisclaimer)
+room_goto(Realtitlescreen)
