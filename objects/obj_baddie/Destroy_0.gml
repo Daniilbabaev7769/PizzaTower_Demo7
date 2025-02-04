@@ -27,38 +27,17 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
 			shake_mag_acc += (5 / room_speed)
 		}
 	}
-	if (object_index != obj_forknight)
-	{
-		with (instance_create(x, y, obj_sausageman_dead))
-			sprite_index = other.spr_dead
-	}
-	else
-	{
-		scr_soundeffect(sfx_breakmetal)
-		with (instance_create(x, y, obj_sausageman_dead))
-			sprite_index = other.spr_dead
-		with (instance_create(x, y, obj_forknightdebris))
-				image_index = 0
-		with (instance_create(x, y, obj_forknightdebris))
-			image_index = 1
-	    with (instance_create(x, y, obj_forknightdebris))
-			image_index = 2
-	    with (instance_create(x, y, obj_forknightdebris))
-			image_index = 3
-	    with (instance_create(x, y, obj_forknightdebris))
-			image_index = 4
-	    with (instance_create(x, y, obj_forknightdebris))
-			image_index = 5
-	}
+	with (instance_create(x, y, obj_sausageman_dead))
+		sprite_index = other.spr_dead
 	ds_list_add(global.baddieroom, id)
 	obj_tv.image_index = random_range(0, 4)
 	global.combo += 1
 	obj_tv.comboshake = 10
-	if (irandom(6) == 2)
-    {
-        with (instance_create(x, y, obj_ammocollect))
-            sprite_index = spr_bulletHUD
-    }
+	//if (irandom(6) == 2)
+    //{
+    //    with (instance_create(x, y, obj_ammocollect))
+    //        sprite_index = spr_bulletHUD
+    //}
 	if (global.timeattack == 0)
 	{
 		if (global.combo == 1)
