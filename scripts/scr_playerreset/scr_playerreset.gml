@@ -103,6 +103,8 @@ function scr_playerreset() {
 		global.treasure = 0
 		global.combo = 0
 		global.combotime = 0
+		global.style = 0
+		global.stylethreshold = 0
 		global.pizzacoin = 0
 		global.toppintotal = 1
 		global.hit = 0

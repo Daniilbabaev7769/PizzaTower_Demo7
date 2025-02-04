@@ -11,21 +11,10 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
 	instance_create(x, y, obj_baddiegibs)
 	instance_create(x, y, obj_baddiegibs)
 	instance_create(x, y, obj_baddiegibs)
-	if (object_index != obj_forknight)
+	with (obj_camera)
 	{
-		with (obj_camera)
-		{
-			shake_mag = 3
-			shake_mag_acc = (3 / room_speed)
-		}
-	}
-	else
-	{
-		with (obj_camera)
-		{
-			shake_mag += 5
-			shake_mag_acc += (5 / room_speed)
-		}
+		shake_mag = 3
+		shake_mag_acc = (3 / room_speed)
 	}
 	with (instance_create(x, y, obj_sausageman_dead))
 		sprite_index = other.spr_dead

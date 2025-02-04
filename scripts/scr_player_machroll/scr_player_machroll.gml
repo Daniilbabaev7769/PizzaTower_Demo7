@@ -49,26 +49,21 @@ function scr_player_machroll() {
 		movespeed += 0.1
 	image_speed = 0.8
 	if ((!key_down) && (!(scr_solid((x + 27), (y - 32)))) && (!(scr_solid((x - 27), (y - 32)))) && (!(scr_solid(x, (y - 32)))) && (!(scr_solid(x, (y - 16)))))
-            {
-                image_index = 0
-                if grounded
-                {
-                    scr_soundeffect(sfx_rollgetup)
-                    sprite_index = spr_rollgetup
-                }
-                if movespeed < 12
-                {
-                    if (!grounded)
-                        sprite_index = spr_mach
-                    state = states.mach2
-                }
-                else
-                {
-                    if (!grounded)
-                        sprite_index = spr_mach4
-                    state = states.mach3
-                }
-            }
+	{
+		image_index = 0
+		scr_soundeffect(sfx_rollgetup)
+		sprite_index = spr_rollgetup
+        if (movespeed < 12)
+		{
+			state = states.mach2
+			movespeed = 8
+		}
+		else
+		{
+			state = states.mach3
+			movespeed = 12
+		}
+	}
 
 
 
